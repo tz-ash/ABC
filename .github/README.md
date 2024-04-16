@@ -10,6 +10,8 @@
   <img src="https://graph.org/file/ae479d362c7b3d8e2396c.jpg">
 </p>
 
+<p><img width="494" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=LOCO-PILOT &show_icons=true&locale=en&layout=compact" alt="LOCO-PILOT" /></p>
+
  <img src="https://readme-typing-svg.herokuapp.com?color=FF00FF&width=420&lines=🐙+🄳🄴🄿🄻🄾🅈+🄾🄽+🄷🄴🅁🄾🄺🅄+🄽🄾🅆+🐙">
 
 
