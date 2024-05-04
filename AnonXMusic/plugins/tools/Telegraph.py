@@ -10,7 +10,7 @@ EVAA = [
     ],
 ]
 
-@app.on_message(filters.command(["tm"]))
+@app.on_message(filters.command(["tgm"]))
 def ul(_, message):
     reply = message.reply_to_message
     if reply.media:
