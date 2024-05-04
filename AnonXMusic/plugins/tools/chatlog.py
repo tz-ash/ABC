@@ -88,7 +88,7 @@ async def join_watcher(_, message):
                 f"● ɢʀᴏᴜᴘ ɴᴀᴍᴇ ➥ {message.chat.title}\n"
                 f"● ɢʀᴏᴜᴘ ɪᴅ ➥ {message.chat.id}\n"
                 f"● ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ ➥ @{message.chat.username}\n"
-                f"● ɢʀᴏᴜᴘ ʟɪɴᴋ ➥ [ʙᴀʙʏ ᴛᴏᴜᴄʜ]({link})\n"
+                f"● ɢʀᴏᴜᴘ ʟɪɴᴋ ➥ {link}\n"
                 f"● ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ➥ {count}\n\n"
                 f"❖ ᴀᴅᴅᴇᴅ ʙʏ ➥ {message.from_user.mention}"
             )
@@ -110,29 +110,5 @@ async def on_left_chat_member(_, message: Message):
             [InlineKeyboardButton(f"ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{app.username}?startgroup=true")]
          ]))
 
-#welcome
-
-@app.on_message(filters.new_chat_members, group=3)
-async def _greet(_, message):    
-    chat = message.chat
-    
-    for member in message.new_chat_members:
-        
-            count = await app.get_chat_members_count(chat.id)
-
-            msg = (
-                f"❖ ʜᴇʏ {message.from_user.mention} ᴡᴇʟᴄᴏᴍᴇ ʙᴀʙʏ ❖\n\n"
-                
-                f"● ɢʀᴏᴜᴘ ɴᴀᴍᴇ ➥ {message.chat.title}\n"
-                f"● ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ ➥ @{message.chat.username}\n\n"
-                f"● ʏᴏᴜʀ ɪᴅ ➥ {member.id}\n"
-                f"● ʏᴏᴜʀ ᴜsᴇʀɴᴀᴍᴇ ➥ @{member.username}\n\n"
-                f"❖ ʏᴏᴜ ᴀʀᴇ {count}ᵀᴴ ᴍᴇᴍʙᴇʀ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ."
-            )
-            await app.send_photo(message.chat.id, photo=random.choice(NYKAA), caption=msg, reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(f"ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{app.username}?startgroup=true")]
-         ]))
-
-
-
+#
       
