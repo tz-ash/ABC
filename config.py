@@ -31,7 +31,7 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600000))
 
 #❖  Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", "-1001929735324"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002092877758"))
 
 #❖ Get this value from @FallenxBot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", "6922271843"))
@@ -44,7 +44,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/LOCO-PILOT/ABC",
+    "https://github.com/tz-kid/tz-kid",
 )
 
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
@@ -53,8 +53,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  #❖ Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/roy_editx")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/the_friendz")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/lev_uh")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/hey_aliens")
 
 #❖ Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
