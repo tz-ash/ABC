@@ -41,7 +41,7 @@ def welcomepic(pic, user, chat, id, uname):
         (605, 605)
     ) 
     draw = ImageDraw.Draw(background)
-    font = ImageFont.truetype('AnonXMusic/assets/font.ttf', size=65)
+    font = ImageFont.truetype('AnonXMusic/assets/font.ttf', size=75)
     font2 = ImageFont.truetype('AnonXMusic/assets/font.ttf', size=90)
     draw.text((150, 450), f'NAME : {unidecode(user)}', fill="black", font=font)
     draw.text((150, 550), f'ID : {id}', fill="black", font=font)
